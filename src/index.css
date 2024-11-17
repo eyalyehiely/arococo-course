@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+
+body {
+  @apply antialiased text-gray-900;
+}
+
+/* RTL specific overrides */
+.rtl-flip {
+  @apply rotate-180;
+}
+
+.ltr {
+  direction: ltr;
+}
