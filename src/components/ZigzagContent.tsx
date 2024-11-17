@@ -1,9 +1,11 @@
-const sections = [
+import staffImage from '../images/staff.jpeg';
+import projectImage from '../images/project.avif';
 
+const sections = [
   {
     title: "מי אנחנו ?",
     description: "סטודיו ארוקוקו הוקם בשנת 2003 על ידי בוגרות הטכניון אלונה יחיאלי ורויטל הוד-ייני והינו בעל נסיון של 20 שנה בתחום.הסטודיו מספק שירותי מיקור חוץ (outsourcing) מקצועיים למספר קבלנים ויזמים בתחום הבניה ומייעץ בתחום תכנון, עיצוב, שינויי דיירים וקשרי לקוחות.",
-    image: "/src/images/staff.jpeg",
+    image: staffImage,
     alt: "עיצוב פנים מודרני"
   },
   {
@@ -15,7 +17,7 @@ const sections = [
   {
     title: "כיצד להתניע פרוייקט",
     description: "איך מתחילים לטפל בדיירים אשר רכשו דירה? איך מתנהלים מול ספקי פרוייקט? איך מועבר מידע לקבלן? איך עושים בקרה? כל אלו ועוד נדבר בסדנה ונענה על השאלות.",
-    image: "/src/images/project.avif",
+    image: projectImage,
     alt: "פרוייקט"
   },
   {
@@ -37,7 +39,7 @@ export default function ZigzagContent() {
     <div className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {sections.map((section, index) => (
-          <div 
+          <div
             key={index}
             className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12 mb-32 last:mb-0`}
           >
@@ -49,9 +51,6 @@ export default function ZigzagContent() {
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 {section.description}
               </p>
-              {/* <button className="bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition-colors">
-                למידע נוסף
-              </button> */}
             </div>
             
             {/* Image */}
