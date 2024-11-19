@@ -65,7 +65,7 @@ export default function CourseDetails() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-4">נדרש</h4>
+              <h4 className="text-lg font-semibold text-gray-900 mb-4">נדרש:</h4>
               <ul className="space-y-3">
                 <li className="flex items-center text-gray-600">
                   <span className="w-2 h-2 bg-indigo-600 rounded-full ml-3"></span>
@@ -82,7 +82,7 @@ export default function CourseDetails() {
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-4">יתרון</h4>
               <ul className="space-y-3">
                 <li className="flex items-center text-gray-600">
@@ -98,7 +98,7 @@ export default function CourseDetails() {
                   הבנה בסיסית באדריכלות
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
         <button></button>
