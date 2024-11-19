@@ -1,5 +1,7 @@
 import staffImage from '../images/staff.jpeg';
 import projectImage from '../images/project.avif';
+import livingRoom from '../images/livingRoom.jpeg'
+import constructions from '../images/constructions.jpg'
 
 const sections = [
   {
@@ -11,7 +13,7 @@ const sections = [
   {
     title: "עבודה מול דיירים",
     description: "דיירים אשר רכשו דירה מצפים לקבל שירות מצויין ומענה לכל שאלה ובעיה.כאן מתאמי שינויי דיירים וקשרי לקוחות נכנסים לפעולה ומהווים את הקשר בין הקבלן והשטח לבין הדייר.כיצד מתמודדים עם בעיות ? כיצד מעבירים את המידע ? כיצד שומרים על קשר עם הדייר וממנפים את העבודה מולו?תשובות בסדנה",
-    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80",
+    image:livingRoom ,
     alt: "עיצוב פנים מודרני"
   },
   {
@@ -29,7 +31,7 @@ const sections = [
   {
     title: "כלים לבקרה ומעקב",
     description: "כל פעילות אשר מבוצעת מול דיירי פרוייקט נמדדת ונבדקת. עלינו בתור מתאמי שינויי דיירים לבקר ולדווח על ההתקדמות, בעיות, תשלומים וכו. ",
-    image: "https://images.unsplash.com/photo-1617104424032-b9bd6972d0e4?auto=format&fit=crop&q=80",
+    image: constructions,
     alt: "תכנון פרויקטים"
   }
 ];

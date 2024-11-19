@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin, Facebook, Instagram, Globe } from 'lucide-react';
-
+import newLogoWhite from '../images/newLogoWhite.png'
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -10,7 +10,8 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-6">
               {/* <Palette className="h-8 w-8 text-indigo-400" /> */}
-              <span className="mr-2 text-xl font-semibold text-white">Arococo</span>
+              <img src={newLogoWhite} alt="logo" className='h-12 w-25 text-indigo-600' />
+              {/* <span className="mr-2 text-xl font-semibold text-white">Arococo</span> */}
             </div>
             <p className="text-gray-400 mb-6">
               מובילים את הדור הבא של מעצבי פנים דרך חינוך מקצועי ומעשי

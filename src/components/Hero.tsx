@@ -25,9 +25,6 @@ export default function Hero() {
               <a href="https://private.invoice4u.co.il/newsite/he/clearing/public/i4u-payment?ProductGuid=c95db62b-580d-4eee-9586-8310fec87b7c">התחילו את המסע</a> 
               <ArrowLeft className="ml-3 h-5 w-5" />
             </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white/10 transition-colors">
-              צפו בסילבוס
-            </button>
           </div>
         </div>
       </div>
