@@ -1,7 +1,6 @@
 import staffImage from '../images/staff.jpeg';
-import projectImage from '../images/project.avif';
 import livingRoom from '../images/livingRoom.jpeg'
-import constructions from '../images/constructions.jpg'
+// import constructions from '../images/constructions.jpeg'
 
 const sections = [
   {
@@ -19,7 +18,7 @@ const sections = [
   {
     title: "כיצד להתניע פרוייקט",
     description: "איך מתחילים לטפל בדיירים אשר רכשו דירה? איך מתנהלים מול ספקי פרוייקט? איך מועבר מידע לקבלן? איך עושים בקרה? כל אלו ועוד נדבר בסדנה ונענה על השאלות.",
-    image: projectImage,
+    image: "",
     alt: "פרוייקט"
   },
   {
@@ -31,7 +30,7 @@ const sections = [
   {
     title: "כלים לבקרה ומעקב",
     description: "כל פעילות אשר מבוצעת מול דיירי פרוייקט נמדדת ונבדקת. עלינו בתור מתאמי שינויי דיירים לבקר ולדווח על ההתקדמות, בעיות, תשלומים וכו. ",
-    image: constructions,
+    image: "",
     alt: "תכנון פרויקטים"
   }
 ];

@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin, Facebook, Instagram, Globe } from 'lucide-react';
-import newLogoWhite from '../images/newLogoWhite.png'
+import newLogoWhite from '../images/newLogoWhite.jpeg'
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
