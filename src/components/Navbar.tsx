@@ -1,4 +1,4 @@
-import { Menu, X, Palette } from 'lucide-react';
+import { Menu, X,} from 'lucide-react';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -18,7 +18,7 @@ export default function Navbar() {
             <a href="#curriculum" className="text-gray-700 hover:text-indigo-600 transition-colors">תוכנית לימודים</a>
             <a href="#gallery" className="text-gray-700 hover:text-indigo-600 transition-colors">גלריה</a> */}
             <button className="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition-colors">
-              הרשמה עכשיו
+              <a href="https://private.invoice4u.co.il/newsite/he/clearing/public/i4u-payment?ProductGuid=c95db62b-580d-4eee-9586-8310fec87b7c">הרשמו כעת</a>
             </button>
           </div>
 
