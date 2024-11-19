@@ -1,6 +1,5 @@
 import staffImage from '../images/staff.jpeg';
 import livingRoom from '../images/livingRoom.jpeg'
-// import constructions from '../images/constructions.jpeg'
 
 const sections = [
   {
