@@ -5,7 +5,7 @@ export default function CourseDetails() {
     {
       icon: <Calendar className="h-6 w-6" />,
       title: "תאריך פתיחה",
-      value: "1 במרץ, 2024",
+      value: "18 בדצמבר, 2024",
     //   description: "משך הקורס: 12 שבועות"
     },
     {

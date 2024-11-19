@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          {/* <div>
             <h3 className="text-white text-lg font-semibold mb-6">קישורים מהירים</h3>
             <ul className="space-y-4">
               <li>
@@ -47,7 +47,7 @@ export default function Footer() {
                 <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors">שאלות נפוצות</a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div>
