@@ -1,5 +1,5 @@
-import { Mail, Phone, MapPin, Facebook, Instagram, Globe } from 'lucide-react';
-import newLogoWhite from '../images/newLogoWhite.jpeg'
+import { Mail, Phone, Facebook, Instagram, Globe } from "lucide-react";
+import newLogoWhite from "../images/newLogoWhite.jpeg";
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -10,23 +10,35 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-6">
               {/* <Palette className="h-8 w-8 text-indigo-400" /> */}
-              <img src={newLogoWhite} alt="logo" className='h-12 w-25 text-indigo-600' />
+              <img
+                src={newLogoWhite}
+                alt="logo"
+                className="h-12 w-25 text-indigo-600"
+              />
               {/* <span className="mr-2 text-xl font-semibold text-white">Arococo</span> */}
             </div>
             <p className="text-gray-400 mb-6">
               מובילים את הדור הבא של מעצבי פנים דרך חינוך מקצועי ומעשי
             </p>
             <div className="flex items-center space-x-reverse space-x-4">
-              <a href="https://www.facebook.com/ARococoInteriorDesign?rdid=v1MmIumUkZ071EmI" className="text-gray-400 hover:text-indigo-400 transition-colors">
+              <a
+                href="https://www.facebook.com/ARococoInteriorDesign?rdid=v1MmIumUkZ071EmI"
+                className="text-gray-400 hover:text-indigo-400 transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="https://www.instagram.com/arococodesign/?utm_source=qr&igsh=MWluMXhlYXpsNGtkNA%3D%3D" className="text-gray-400 hover:text-indigo-400 transition-colors">
+              <a
+                href="https://www.instagram.com/arococodesign/?utm_source=qr&igsh=MWluMXhlYXpsNGtkNA%3D%3D"
+                className="text-gray-400 hover:text-indigo-400 transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="https://a-rococo.com/" className="text-gray-400 hover:text-indigo-400 transition-colors">
+              <a
+                href="https://a-rococo.com/"
+                className="text-gray-400 hover:text-indigo-400 transition-colors"
+              >
                 <Globe className="h-5 w-5" />
               </a>
-             
             </div>
           </div>
 
@@ -53,17 +65,28 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-lg font-semibold mb-6">צור קשר</h3>
             <ul className="space-y-4">
-            <li className="flex items-center">
-              <Phone className="h-5 w-5 ml-3 text-indigo-400" />
-              <a href="tel:0543094447" className="text-indigo-400">0543094447</a>
-            </li>
-            <li className="flex items-center">
-              <Mail className="h-5 w-5 ml-3 text-indigo-400" />
-              <a href="mailto:alona@a-rococo.com" className="text-indigo-400">alona@a-rococo.com</a>
-            </li>
               <li className="flex items-center">
-                <MapPin className="h-5 w-5 ml-3 text-indigo-400" />
-                <span>משה סנה 20 פתח תקווה</span>
+                <Phone className="h-5 w-5 ml-3 text-indigo-400" />
+                <a href="tel:0543094447" className="text-indigo-400">
+                  0543094447
+                </a>
+                ,{" "}
+                <a href="tel:0544313444" className="text-indigo-400">
+                  0544313444
+                </a>
+              </li>
+              <li className="flex items-center">
+                <Mail className="h-5 w-5 ml-3 text-indigo-400" />
+                <a href="mailto:alona@a-rococo.com" className="text-indigo-400">
+                  alona@a-rococo.com
+                </a>
+                ,{" "}
+                <a
+                  href="mailto:revital@a-rococo.com"
+                  className="text-indigo-400"
+                >
+                  revital@a-rococo.com
+                </a>
               </li>
             </ul>
           </div>
@@ -99,10 +122,16 @@ export default function Footer() {
               © {new Date().getFullYear()} Arococo. כל הזכויות שמורות.
             </p>
             <div className="flex space-x-reverse space-x-6">
-              <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-indigo-400 transition-colors text-sm"
+              >
                 תנאי שימוש
               </a>
-              <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-indigo-400 transition-colors text-sm"
+              >
                 מדיניות פרטיות
               </a>
             </div>
