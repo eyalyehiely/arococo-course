@@ -1,6 +1,8 @@
 import staffImage from '../images/staff.jpeg';
 import livingRoom from '../images/livingRoom.jpg'
 import project from '../images/project.avif'
+import calculator  from '../images/calculator.jpg';
+import staff2 from '../images/staff2.jpg'
 
 const sections = [
   {
@@ -24,13 +26,13 @@ const sections = [
   {
     title: "כיצד מתמחרים שינויים",
     description: "שינויים אשר מבוצעים במסגרת בניית דירה כרוכים בתשלום. כיצד מתמחרים את השינוי? כיצד מתייחסים לכל שינוי ובאיזה שלב הוא מבוצע? בסדנה ניתן מענה ודוגמאות לכל נושא התמחור.",
-    image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&q=80",
+    image: calculator,
     alt: "אווירה פנימית"
   },
   {
     title: "כלים לבקרה ומעקב",
     description: "כל פעילות אשר מבוצעת מול דיירי פרוייקט נמדדת ונבדקת. עלינו בתור מתאמי שינויי דיירים לבקר ולדווח על ההתקדמות, בעיות, תשלומים וכו. ",
-    image: '',
+    image: staff2,
     alt: "תכנון פרויקטים"
   }
 ];
