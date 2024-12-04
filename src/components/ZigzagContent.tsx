@@ -2,7 +2,7 @@ import staffImage from '../images/staff.jpeg';
 import livingRoom from '../images/livingRoom.jpg'
 import project from '../images/project.avif'
 import calculator  from '../images/calculator.jpg';
-import staff2 from '../images/staff2.jpg'
+import staff2 from '../images/staff2.jpeg'
 
 const sections = [
   {
