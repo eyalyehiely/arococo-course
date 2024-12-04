@@ -65,22 +65,20 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-lg font-semibold mb-6">צור קשר</h3>
             <ul className="space-y-4">
-              <li className="flex items-center">
+              <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 ml-3 text-indigo-400" />
                 <a href="tel:0543094447" className="text-indigo-400">
                   0543094447
                 </a>
-                ,{" "}
                 <a href="tel:0544313444" className="text-indigo-400">
                   0544313444
                 </a>
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 ml-3 text-indigo-400" />
                 <a href="mailto:alona@a-rococo.com" className="text-indigo-400">
                   alona@a-rococo.com
-                </a>
-                ,{" "}
+                </a> 
                 <a
                   href="mailto:revital@a-rococo.com"
                   className="text-indigo-400"
