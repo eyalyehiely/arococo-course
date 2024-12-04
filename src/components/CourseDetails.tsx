@@ -11,7 +11,7 @@ export default function CourseDetails() {
     {
       icon: <Clock className="h-6 w-6" />,
       title: "שעות",
-      value: "18:00-21:30",
+      value: "10:00-13:00",
     //   description: ""
     },
     {
