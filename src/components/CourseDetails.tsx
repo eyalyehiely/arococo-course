@@ -5,7 +5,7 @@ export default function CourseDetails() {
     {
       icon: <Calendar className="h-6 w-6" />,
       title: "תאריך פתיחה",
-      value: "18 בדצמבר, 2024",
+      value: "13 בינואר, 2024",
       //   description: "משך הקורס: 12 שבועות"
     },
     {
@@ -18,7 +18,7 @@ export default function CourseDetails() {
       icon: <MapPin className="h-6 w-6" />,
       title: "מיקום",
       value: "ZOOM",
-      //   description: "כולל חניה חינם למשתתפי הקורס"
+      
     },
     {
       icon: <Wallet className="h-6 w-6" />,
@@ -36,6 +36,7 @@ export default function CourseDetails() {
           <ArrowLeft className="ml-3 h-5 w-5" />
         </button>
       ),
+        description:"*ניתן לקבל החזר מלא עד 72 שעות מתחילת הסדנה."
     },
   ];
 
@@ -67,7 +68,7 @@ export default function CourseDetails() {
                 {detail.value}
                 <p className="text-xl font-bold text-indigo-600 mt-2">{detail.button}</p>
               </p>
-              <p className="text-gray-600">{/* {detail.description} */}</p>
+              <p className="text-gray-600">{detail.description}</p>
             </div>
           ))}
         </div>
