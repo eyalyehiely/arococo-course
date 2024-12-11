@@ -1,21 +1,20 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Features from './components/Features';
-// import Curriculum from './components/Curriculum';
-import ZigzagContent from './components/ZigzagContent';
-import Footer from './components/Footer';
-import CourseDetails from './components/CourseDetails';
+import { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import Home from "./components/Home";
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <Features />
-      <ZigzagContent />
-      <CourseDetails/>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/privacy" element={<PrivacyPolicy />} />
+    </Routes>
   );
 }
 
