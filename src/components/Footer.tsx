@@ -1,5 +1,7 @@
 import { Mail, Phone, Facebook, Instagram, Globe } from "lucide-react";
 import newLogoWhite from "../images/newLogoWhite.jpeg";
+import { NavLink } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -10,11 +12,14 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-6">
               {/* <Palette className="h-8 w-8 text-indigo-400" /> */}
-              <img
-                src={newLogoWhite}
-                alt="logo"
-                className="h-12 w-25 text-indigo-600"
-              />
+              <NavLink to="/">
+                <img
+                  src={newLogoWhite}
+                  alt="logo"
+                  className="h-12 w-25 text-indigo-600"
+                />
+              </NavLink>
+
               {/* <span className="mr-2 text-xl font-semibold text-white">Arococo</span> */}
             </div>
             <p className="text-gray-400 mb-6">
@@ -78,7 +83,7 @@ export default function Footer() {
                 <Mail className="h-5 w-5 ml-3 text-indigo-400" />
                 <a href="mailto:alona@a-rococo.com" className="text-indigo-400">
                   alona@a-rococo.com
-                </a> 
+                </a>
                 <a
                   href="mailto:revital@a-rococo.com"
                   className="text-indigo-400"
@@ -120,14 +125,14 @@ export default function Footer() {
               © {new Date().getFullYear()} Arococo. כל הזכויות שמורות.
             </p>
             <div className="flex space-x-reverse space-x-6">
-              <a
+              {/* <a
                 href="#"
                 className="text-gray-400 hover:text-indigo-400 transition-colors text-sm"
               >
                 תנאי שימוש
-              </a>
+              </a> */}
               <a
-                href="#"
+                href="/privacy"
                 className="text-gray-400 hover:text-indigo-400 transition-colors text-sm"
               >
                 מדיניות פרטיות
