@@ -48,10 +48,10 @@ export default function ZigzagContent() {
           >
             {/* Text Content */}
             <div className="flex-1 lg:px-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl font-bold text-gray-900 mb-3">
                 {section.title}
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              <p className="text-lg text-gray-600 leading-relaxed mb-4">
                 {section.description}
               </p>
             </div>

@@ -20,6 +20,9 @@ export default function Hero() {
           <p className="text-xl text-gray-200 mb-8">
           מתאם קשרי לקוחות ושינויי דיירים הינו איש הקשר המחבר בין הקבלן לבין בעל הנכס משלב התוכניות ועד שלב בחירת החומרים. 
           </p>
+          <p className="text-xl text-gray-200 mb-8">
+            ZOOM | 13.01.2025 | 10:00-13:00
+          </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition-colors inline-flex items-center justify-center">
               <a href="https://private.invoice4u.co.il/newsite/he/clearing/public/i4u-payment?ProductGuid=c95db62b-580d-4eee-9586-8310fec87b7c">התחילו את המסע</a> 
