@@ -11,7 +11,6 @@ export default function Footer() {
           {/* Brand Section */}
           <div>
             <div className="flex items-center mb-6">
-              {/* <Palette className="h-8 w-8 text-indigo-400" /> */}
               <NavLink to="/">
                 <img
                   src={newLogoWhite}
@@ -19,8 +18,6 @@ export default function Footer() {
                   className="h-12 w-25 text-indigo-600"
                 />
               </NavLink>
-
-              {/* <span className="mr-2 text-xl font-semibold text-white">Arococo</span> */}
             </div>
             <p className="text-gray-400 mb-6">
               מובילים את הדור הבא של מעצבי פנים דרך חינוך מקצועי ומעשי
@@ -46,25 +43,6 @@ export default function Footer() {
               </a>
             </div>
           </div>
-
-          {/* Quick Links */}
-          {/* <div>
-            <h3 className="text-white text-lg font-semibold mb-6">קישורים מהירים</h3>
-            <ul className="space-y-4">
-              <li>
-                <a href="#overview" className="text-gray-400 hover:text-indigo-400 transition-colors">סקירה כללית</a>
-              </li>
-              <li>
-                <a href="#curriculum" className="text-gray-400 hover:text-indigo-400 transition-colors">תוכנית לימודים</a>
-              </li>
-              <li>
-                <a href="#gallery" className="text-gray-400 hover:text-indigo-400 transition-colors">גלריה</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors">שאלות נפוצות</a>
-              </li>
-            </ul>
-          </div> */}
 
           {/* Contact Info */}
           <div>
@@ -93,27 +71,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Newsletter */}
-          {/* <div>
-            <h3 className="text-white text-lg font-semibold mb-6">הירשמו לעדכונים</h3>
-            <p className="text-gray-400 mb-4">
-              קבלו עדכונים על קורסים חדשים וטיפים מקצועיים
-            </p>
-            <form className="space-y-3">
-              <input
-                type="email"
-                placeholder="כתובת אימייל"
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-indigo-400 text-right"
-              />
-              <button
-                type="submit"
-                className="w-full bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors"
-              >
-                הרשמה לניוזלטר
-              </button>
-            </form>
-          </div> */}
         </div>
       </div>
 
@@ -125,12 +82,6 @@ export default function Footer() {
               © {new Date().getFullYear()} Arococo. כל הזכויות שמורות.
             </p>
             <div className="flex space-x-reverse space-x-6">
-              {/* <a
-                href="#"
-                className="text-gray-400 hover:text-indigo-400 transition-colors text-sm"
-              >
-                תנאי שימוש
-              </a> */}
               <a
                 href="/privacy"
                 className="text-gray-400 hover:text-indigo-400 transition-colors text-sm"
@@ -138,6 +89,17 @@ export default function Footer() {
                 מדיניות פרטיות
               </a>
             </div>
+            <p className="text-gray-400 text-sm">
+              © {new Date().getFullYear()} | Made by{" "}
+              <a
+                href="https://portfolio-production-7b0f.up.railway.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-400"
+              >
+                Eyal Yehiely
+              </a>
+            </p>
           </div>
         </div>
       </div>
