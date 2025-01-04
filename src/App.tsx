@@ -10,6 +10,7 @@ import {
   setUserProperties,
   trackPurchaseIntent
 } from "./analytics.js";
+import UserDataForm from './UserDataForm'
 
 function App() {
   const { pathname } = useLocation();
