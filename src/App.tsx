@@ -1,30 +1,66 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Home from "./components/Home";
-import { initGA, logPageView, trackScrollDepth, getUserLocation } from "./analytics";
+import {
+  initGA,
+  logPageView,
+  trackScrollDepth,
+  getUserLocation,
+  setUserProperties,
+  trackPurchaseIntent
+} from "./analytics.js";
 
 function App() {
   const { pathname } = useLocation();
+  const [userProperties, setUserPropertiesState] = useState({
+    age: null,
+    gender: null,
+    city: null
+  });
 
+  // Initialize GA and get location once
   useEffect(() => {
-    initGA(); // Initialize GA
-    getUserLocation(); // Log user location once on app load
+    initGA();
+    getUserLocation();
   }, []);
 
+  // Handle route changes and scroll tracking
   useEffect(() => {
     window.scrollTo(0, 0);
-    logPageView(); // Log pageview on route change
+    logPageView(userProperties);
+    
+    const cleanup = trackScrollDepth();
+    return () => cleanup();
+  }, [pathname, userProperties]);
 
-    const cleanup = trackScrollDepth(); // Track scroll depth
-    return () => cleanup(); // Clean up scroll listener
-  }, [pathname]);
+  // Example of how to collect user properties
+  const handleUserDataCollection = (data) => {
+    const properties = {
+      age: data.age,
+      gender: data.gender,
+      city: data.city
+    };
+    
+    setUserPropertiesState(properties);
+    setUserProperties(properties);
+  };
+
+  // Example of tracking buy button clicks
+  const handleBuyClick = () => {
+    trackPurchaseIntent();
+  };
 
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/privacy" element={<PrivacyPolicy />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Home onBuyClick={handleBuyClick} />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+      </Routes>
+
+      {/* Example form for collecting user data */}
+      <UserDataForm onSubmit={handleUserDataCollection} />
+    </>
   );
 }
 
