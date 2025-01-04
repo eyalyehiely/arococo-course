@@ -1,67 +1,30 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Home from "./components/Home";
-import {
-  initGA,
-  logPageView,
-  trackScrollDepth,
-  getUserLocation,
-  setUserProperties,
-  trackPurchaseIntent
-} from "./analytics.js";
-import UserDataForm from './UserDataForm'
+import { initGA, logPageView, trackScrollDepth, getUserLocation } from "./analytics";
 
 function App() {
   const { pathname } = useLocation();
-  const [userProperties, setUserPropertiesState] = useState({
-    age: null,
-    gender: null,
-    city: null
-  });
 
-  // Initialize GA and get location once
   useEffect(() => {
-    initGA();
-    getUserLocation();
+    initGA(); // Initialize GA
+    getUserLocation(); // Log user location once on app load
   }, []);
 
-  // Handle route changes and scroll tracking
   useEffect(() => {
     window.scrollTo(0, 0);
-    logPageView(userProperties);
-    
-    const cleanup = trackScrollDepth();
-    return () => cleanup();
-  }, [pathname, userProperties]);
+    logPageView(); // Log pageview on route change
 
-  // Example of how to collect user properties
-  const handleUserDataCollection = (data) => {
-    const properties = {
-      age: data.age,
-      gender: data.gender,
-      city: data.city
-    };
-    
-    setUserPropertiesState(properties);
-    setUserProperties(properties);
-  };
-
-  // Example of tracking buy button clicks
-  const handleBuyClick = () => {
-    trackPurchaseIntent();
-  };
+    const cleanup = trackScrollDepth(); // Track scroll depth
+    return () => cleanup(); // Clean up scroll listener
+  }, [pathname]);
 
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Home onBuyClick={handleBuyClick} />} />
-        <Route path="/privacy" element={<PrivacyPolicy />} />
-      </Routes>
-
-      {/* Example form for collecting user data */}
-      <UserDataForm onSubmit={handleUserDataCollection} />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/privacy" element={<PrivacyPolicy />} />
+    </Routes>
   );
 }
 
