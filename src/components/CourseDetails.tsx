@@ -131,7 +131,7 @@ export default function CourseDetails() {
     {
       icon: <Calendar className="h-6 w-6" />,
       title: "תאריך פתיחה",
-      value: "13 בינואר, 2024",
+      value: "05 במאי, 2025",
     },
     {
       icon: <Clock className="h-6 w-6" />,
@@ -146,7 +146,7 @@ export default function CourseDetails() {
     {
       icon: <Wallet className="h-6 w-6" />,
       title: "מחיר",
-      value: "₪429",
+      value: "₪399",
       button: (
         <button className="bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition-colors inline-flex items-center justify-center">
           <a

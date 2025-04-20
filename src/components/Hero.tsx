@@ -1,4 +1,5 @@
 import { ArrowDown, ArrowLeft } from "lucide-react";
+import heroImage from "../images/heroImage.jpeg";
 
 export default function Hero() {
   const scrollToBottom = () => {
@@ -11,7 +12,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-l from-black/70 to-black/50 z-10" />
         <img
-          src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&q=80"
+          src={heroImage}
           alt="Interior Design Studio"
           className="w-full h-full object-cover"
         />
@@ -36,7 +37,7 @@ export default function Hero() {
             </thead>
             <tbody>
               <tr>
-                <td className="text-lg text-gray-200 px-2 py-1">13.01.25</td>
+                <td className="text-lg text-gray-200 px-2 py-1">05.05.25</td>
                 <td className="text-lg text-gray-200 px-2 py-1">10:00-13:00</td>
                 <td className="text-lg text-gray-200 px-2 py-1">ZOOM</td>
               </tr>
