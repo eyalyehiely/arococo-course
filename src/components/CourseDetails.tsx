@@ -131,7 +131,7 @@ export default function CourseDetails() {
     {
       icon: <Calendar className="h-6 w-6" />,
       title: "תאריך פתיחה",
-      value: "05 במאי, 2025",
+      value: "23 ביוני, 2025",
     },
     {
       icon: <Clock className="h-6 w-6" />,

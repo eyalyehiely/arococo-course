@@ -37,7 +37,7 @@ export default function Hero() {
             </thead>
             <tbody>
               <tr>
-                <td className="text-lg text-gray-200 px-2 py-1">05.05.25</td>
+                <td className="text-lg text-gray-200 px-2 py-1">23.06.25</td>
                 <td className="text-lg text-gray-200 px-2 py-1">10:00-13:00</td>
                 <td className="text-lg text-gray-200 px-2 py-1">ZOOM</td>
               </tr>
